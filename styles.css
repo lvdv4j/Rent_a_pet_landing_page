@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    margin-top: 180px;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    color: #1f1f1f;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fce7e7;
+    padding-bottom: 10px;
+  }
+  
+  #header-img {
+    max-width: 20%;
+    object-fit: contain;
+    margin-left: -100px;
+  }
+  
+  .heading {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  #header a {
+    text-decoration: none;
+    color: #6f7376;
+  }
+  
+  #header a:hover {
+    color: #1f1f1f;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .social-icons {
+    padding-left: 20px;
+  }
+  
+  .search-icon {
+    padding-right: 20px;
+  }
+  
+  .icons {
+    font-size: 3rem;
+  }
+  
+  .image {
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+  
+  .nav-line {
+    border: 1px solid #e0cfcf;
+  }
+  
+  .nav-bar li:not(:last-child)::after {
+    content: "|";
+    padding: 5px;
+    margin: 5px;
+    color: #e0cfcf;
+  }
+  
+  #meet-our-pets {
+    margin-top: 40px;
+  }
+  
+  .prices > li {
+    text-align: center;
+    color: #5b818a;
+  }
+  
+  .description,
+  .prices {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+  
+  .pet-gallary {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: calc(100% / 1.5);
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .pet {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border: 1.5px solid #6f7376;
+    border-radius: 20px;
+  }
+  
+  .pet > img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  .pet > .level {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #ddd;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-size: 2rem;
+  }
+  
+  .level > span {
+    color: #5b818a;
+  }
+  
+  .pet-gallary::after {
+    content: "";
+    width: 250px;
+    gap: 10px 0px;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  #about-us > .text {
+    font-size: 1.8rem;
+    letter-spacing: 0.6px;
+    text-align: left;
+    padding: 0px 15px;
+  }
+  
+  .sub-heading {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #5b818a;
+    font-weight: 550;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  .reason-list > li > span {
+    color: #5b818a;
+    font-weight: 550;
+  }
+  
+  .reason-list {
+    font-size: 2rem;
+    padding: 15px;
+  }
+  
+  .video {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .quotes-container
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .quote{
+    font-size: 2.5rem;
+    color: #5b818a;
+    font-family: 'Caveat', monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 350px;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border-left: 3px solid #e0cfcf;
+    border-right: 3px solid #e0cfcf;
+  }
+  
+  blockquote > footer{
+    padding-top: 20px;
+    font-weight: 570;
+  }
+  
+  #sign-up > .heading {
+    padding-top: 10px;
+  }
+  
+  #sign-up > .sub-heading {
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+  }
+  
+  .btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 1.5px #e0cfcf solid;
+    border-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  #email {
+    text-align: center;
+  }
+  
+  #hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #sign-up input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;  
+  }
+  
+  #sign-up input[type='submit']:hover {
+    background-color: #e0cfcf;
+    transition: background-color 1s;
+  }
+  
+  .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .footer {
+    margin-top: 30px;
+    background-color: #fce7e7;
+    padding: 20px;
+    font-size: 1.3rem;
+  }
+  
+  .footer > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer > ul > li {
+    padding: 0 10px;
+  }
+  
+  .footer a{
+    text-decoration: none;
+    color: #6f7376;
+  }
+  
+  .footer a:hover {
+    color: #1f1f1f;
+  }
+  
+  .footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    color: #444;
+  }
+
+  .footnote{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8em;
+    color: #6f7376;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    #header-img {
+    max-width: 50%;
+    object-fit: contain;
+    margin-left: -50px;
+  }
+  
+  nav > ul {
+    font-size: 1.5rem;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+  }
+  
+  .social-icons {
+    padding-left: 10px;
+  }
+  
+  .search-icon {
+    padding-right: 10px;
+  }
+  
+  .icons {
+    font-size: 2.2rem;
+  }
+  
+  body {
+    margin-top: 150px;
+  }
+  }

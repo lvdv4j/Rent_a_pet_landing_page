@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head, meta and link elements-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <script src="./script.js"></script>
+
+    <!-- The script file to use fontawesome icons-->
+    <script src="https://kit.fontawesome.com/aca5d6aa60.js" crossorigin="anonymous"></script>
+
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <!-- Start of header-->
+    <header id="header">
+      <div class="logo-container">
+        <div class = "icons social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+      </div>
+      <img id="header-img" src="https://lh3.googleusercontent.com/drive-viewer/AK7aPaCrcvmm70cPvTqsDRn5fAqS9bKYRsbq-RhC8QCY3q2rWo251YToCBc-Tnu0Fv7Ql7mREDZe0nowR5D0xK3Y13jzPdl3BQ=s1600" alt="Rent A Pet Logo" loading="lazy">
+      <div class="icons search-icon">
+        <a href="#" onclick="searchAlert()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+
+      </div>
+
+      <div class="nav-bar">
+        <hr class="nav-line">
+        <nav id="nav-bar">
+          <ul>
+            <li>
+              <a class="nav-link" href="#about-us">About Us</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#meet-our-pets">Meet Our Pets</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#sign-up">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container"></div>
+      <!-- End of header-->
+    </header>
+    <section id="about-us">
+      <h1 class="heading">About Us</h1>
+      <p class="text">Welcome to Rent a Pet, where we believe in the transformative power of companionship. Our mission is to bring joy and warmth into the lives of those who may be lonely or seeking a furry friend for a special occasion or event. At Rent a Pet, we understand that not everyone can commit to the long-term responsibility of pet ownership. That's why we offer a unique solution—temporary pet rental! Whether you're looking for a delightful companion for a day out, a weekend event, or just some furry comfort at home, we've got the perfect pet for you. Our carefully curated selection of pets includes playful puppies, elegant cats, and even exotic critters for those who seek a touch of the extraordinary. Each pet is well-trained, vaccinated, and comes with all the essentials to ensure a delightful experience for both you and your new temporary companion.</p>
+
+  <p class="sub-heading">Why choose Rent a Pet?</p>
+  
+  <ul class="reason-list">
+    <li><span>Flexible Rental Options:</span> Choose the duration that suits your needs, from a few hours to an entire weekend.</li>
+    <li><span>Professional Care:</span> Our pets are cared for by experienced handlers to ensure their well-being and happiness.</li>
+    <li><span>Unforgettable Experiences:</span> Create lasting memories with a furry friend by your side for special occasions or leisure activities.</li>
+    <li><span>No Long-Term Commitments:</span> Enjoy the benefits of pet companionship without the lifelong commitment.</li>
+  </ul>
+
+  <p class="text">Join the Rent a Pet family and discover the joy of a temporary furry friend. Whether you're preparing for a show, combating loneliness, or simply indulging in the joy of pet companionship, we're here to make it happen.</p>
+
+  <div class="video">
+  <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/BYh3Gykv90w?si=Y_ZXh2r2k7RGQAlx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+    </section>
+    
+    <section id="meet-our-pets">
+     
+      <h1 class="heading">Meet Our Pets</h1>
+      <div class="pet-gallary">
+      <div class="pet" id="bulldog">
+        <div class="level">Hi, I'm <span>Barto</span></div>
+        <img src="https://cdn.britannica.com/07/234207-050-0037B589/English-bulldog-dog.jpg" alt="picture of a bulldog named Barto">
+        <p class="description">I like playing fetch with the kids, birthday parties, and walks in the park with grandma. You can count on me to always make you laugh.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$20/hr</li>
+          <li>$100/week</li>
+        </ul>
+      </div>
+      
+      <div class="pet" id="husky">
+        <div class="level">Hi, I'm <span>Shasha</span></div>
+        <img src="https://images.unsplash.com/photo-1617895153857-82fe79adfcd4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVza3l8ZW58MHx8MHx8fDA%3D" alt="picture of a young husky named Shasha">
+        <p class="description">I like peaceful naps, outdoor adventures and roadtrips. If you're ever feeling lonely, I'll be there for you.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$30/hr</li>
+          <li>$70/week</li>
+        </ul>
+      </div>
+      
+      <div class="pet" id="labrador">
+        <div class="level">Hi, I'm <span>Luffy</span></div>
+        <img src="https://i.pinimg.com/564x/dd/da/89/ddda899cbe2e18766ca1797806efe8b8.jpg" alt="picture of a labrador puppy named Lado">
+        <p class="description">I may be just a puppy but I have a big heart and love to play games. I love children and walking on the beach.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$25/hr</li>
+          <li>$100/week</li>
+        </ul>
+      </div>
+      
+      <div class="pet" id="coon">
+        <div class="level">Hi, I'm <span>Sylvester</span></div>
+        <img src="https://www.katdootje.nl/wp-content/uploads/kartierr_Maincoon_cat_very_clear_eyes_ultra_realistic_in_a_gian_1a6833b6-35d2-43bf-9cc0-6bc4d1898999.png" alt="picture of a Maine Coon cat named Sylvester">
+        <p class="description">I'm a sophisticated cat with a love for art gallaries, music festivals and lying on your lap for hours.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$20/hr</li>
+          <li>$80/week</li>
+        </ul>
+      </div>
+      
+      <div class="pet" id="fold">
+        <div class="level">Hi, I'm <span>Smokey<span></div>
+        <img src="https://d3544la1u8djza.cloudfront.net/APHI/Blog/2020/08-06/The+Scottish+Fold+_+Temperament+Shedding+and+Care+_+ASPCA+Pet+Insurance+_+Scottish+fold+cat+resting+on+a+multicolored+piece+of+furniture+-min.jpg" alt="picture of a Scottish Fold cat named Smokey">
+        <p class="description">I enjoy a good cuddle, playing with kids, smacking a ball of yarn and also like exploring your house.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$10/hr</li>
+          <li>$50/week</li>
+        </ul>
+      </div>
+      
+      <div class="pet" id="ragdoll">
+        <div class="level">Hi, I'm <span>Jasmine</span></div>
+        <img src="https://cutecatsforyou.com/wp-content/uploads/2023/07/Ragdoll-Cat-02.jpg" alt="picture of a ragdoll cat named Jasmine">
+        <p class="description">I love shopping, going for walks outside and dressing up in cute outfits.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$30/hr</li>
+          <li>$120/week</li>
+        </ul>
+      </div>
+     
+      <div class="pet" id="ferret">
+        <div class="level">Hi, I'm <span>Poco</span></div>
+        <img src="https://www.rspcansw.org.au/wp-content/uploads/2017/02/ferret2-700x587.jpg" alt="picture of a ferret named poco">
+        <p class="description">I love worming my way into tight spaces and playing hide and seek.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$20/hr</li>
+          <li>$100/week</li>
+        </ul>
+      </div>
+      
+      <div class="pet" id="chinchilla">
+        <div class="level">Hi, I'm <span>Sir Alex</span></div>
+        <img src="https://www.alexandriapetcare.com/wp-content/uploads/2018/07/perfectly-round-chinchilla-camerons-chinchillas-15-58ad5374a8afb__700.jpg" alt="picture of a chinchilla named Sir Alex">
+        <p class="description">I love to sleep a lot and sit on your lap while you watch TV.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$20/hr</li>
+          <li>$90/week</li>
+        </ul>
+      </div>
+      
+      <div class="pet" id="bunny">
+        <div class="level">Hi, I'm <span>Gizmo</span></div>
+        <img src="https://www.thesprucepets.com/thmb/OQOdTA_q9YFy2jY3xA1o0SqVzqA=/3000x0/filters:no_upscale():strip_icc()/is-a-rabbit-the-right-pet-for-you-1239320-hero-f324bac8dc34470093dd61d117e0d9ec.jpg" alt="picture of a bunny named Gizmo">
+        <p class="description">I love to hop around in your garden. I can also do party tricks.</p>
+        <ul class="prices">I'll be your friend for: 
+          <li>$35/hr</li>
+          <li>$100/week</li>
+        </ul>
+        </div>
+      </div>
+    </section>
+    
+    <hr>
+    <section id="testimonials">
+      <h1 class="heading">Testimonials</h1>
+      <div class="quotes-container">
+      <div class="quote">
+    <blockquote>
+      <p>"Rent a Pet has been a game-changer for me. I needed a furry friend for a weekend event, and I found the perfect companion through their service. Professional and delightful experience!"       
+      </p>
+      <footer>- Emily W.</footer>
+    </blockquote>
+  </div>
+
+  <div class="quote">
+    <blockquote>
+      <p>"I'm not ready for a long-term pet commitment, but I still wanted some company. Renting a pet from here was the perfect solution. The process was easy, and my temporary friend brought me so much joy!"
+      </p>
+      <footer>- Alex M.</footer>
+    </blockquote>
+  </div>
+
+  <div class="quote">
+    <blockquote>
+      <p>"As a cat lover, I enjoyed every moment with Sylvester. He was the perfect addition to my home for the week. Thank you, Rent a Pet, for making this possible!"
+      </p>
+      <footer>- Jessica L.</footer>
+    </blockquote>
+    </div>
+  </div>
+    </section>
+    <hr>
+    <section id="sign-up">
+      <h1 class="heading">Sign Up</h1>
+      <p class="sub-heading">Ready to Rent a Pet?</p>
+      <div class="sign-up-container">
+      <form id="form" action="#">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="Get Started" class="btn" onclick="bttnAlert()">
+      </form>
+      </div>
+    </section>
+    <footer class="footer">
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span>Copyright 2023, Rent a Pet</span>
+          <div class="footnote">*Please note that this company does not actually exist.*</div>
+        </footer>
+  </body>
+</html>
